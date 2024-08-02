@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <header>
+    <h1>Task Board</h1>
+  </header>
+  <body>
+    <div id="addTask"></div>
+    <div id="board">
+      <div>
+        <h2>High Importance, High Urgency</h2>
+        <h3>Focus</h3>
+        <div title="TaskCard" id="taskId0001">
+          <input type="text" value="{title}" />
+          <textarea value="{notes}"> </textarea>
+          <label>
+            Importance: {importance}
+            <input type="range" min="0" max="10" value="{importance}" />
+          </label>
+          <label>
+            Urgency: {urgency}
+            <input type="range" min="0" max="10" value="{urgency}" />
+        </div>
+      </div>
+      <div>
+        <h2>High Importance, Low Urgency</h2>
+        <h3>Goals/Plan</h3>
+      </div>
+      <div>
+        <h2>Low Importance, High Urgency</h2>
+        <h3>Delegate/Fit In</h3>
+      </div>
+      <div>
+        <h2>Low Importance, Low Urgency</h2>
+        <h3>Eliminate/Backburnner</h3>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

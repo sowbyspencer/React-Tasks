@@ -1,0 +1,215 @@
+/* General Styles */
+.App {
+  text-align: center;
+}
+
+/* Header and Footer Styles */
+header,
+footer {
+  padding: 20px;
+  background: #f1f1f1;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer-content a:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+/* Task and Board Styles */
+#board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quadrant {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#addTask,
+.task-card {
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Card Content */
+.task-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.task-card p {
+  margin: 5px 0;
+}
+
+.completed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completed-label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+/* Buttons */
+.task-card button,
+#addTask button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-card button.delete {
+  background-color: #dc3545;
+}
+
+.task-card button.delete:hover {
+  background-color: #c82333;
+}
+
+.task-card button:hover,
+#addTask button:hover {
+  background-color: #0056b3;
+}
+
+/* Inputs */
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+#addTask input,
+#addTask textarea,
+.task-card input,
+.task-card textarea {
+  width: calc(100% - 20px);
+  margin: 5px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addTask input.error,
+.task-card input.error {
+  animation: highlight 1.5s ease;
+  background-color: red;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: #ffcccc;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+/* Hover Effects */
+.task-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Mobile-friendly Styles */
+@media (max-width: 768px) {
+  #board {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .quadrant {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #addTask,
+  .task-card {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  header,
+  footer {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .task-card h3 {
+    font-size: 1em;
+  }
+
+  .task-card button,
+  #addTask button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-content p,
+  .footer-content a {
+    font-size: 0.9em;
+  }
+}
