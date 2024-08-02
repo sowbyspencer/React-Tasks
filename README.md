@@ -1,6 +1,8 @@
 # Task Management App
 
-This project is a task management application built with React. It allows users to add, edit, and delete tasks, and organize them based on importance and urgency on a virtual board. This project was created to gain exposure to React, following the learning resources from [React's official documentation](https://react.dev/learn) and [W3Schools React](https://www.w3schools.com/react/default.asp).
+[Current hosted site](https://react-tasks-fam7.onrender.com/)
+
+This project is a task management application built with React. It allows users to add, edit, and delete tasks, and organize them based on importance and urgency on a virtual board (Tasks are only saved locally). This project was created to gain exposure to React, following the learning resources from [React's official documentation](https://react.dev/learn) and [W3Schools React](https://www.w3schools.com/react/default.asp).
 
 ## Features
 
