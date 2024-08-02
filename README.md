@@ -24,37 +24,24 @@ This project is a task management application built with React. It allows users 
 
 ## Project Structure
 
+```
 task-management-app/
-
 ├── node_modules/
-
 ├── public/
-
 │ └── index.html
-
 ├── src/
-
 │ ├── components/
-
 │ │ ├── AddTask.js
-
 │ │ ├── TaskBoard.js
-
 │ │ ├── TaskCard.js
-
 │ ├── App.js
-
 │ ├── index.js
-
 │ └── styles.css
-
 ├── .gitignore
-
 ├── package-lock.json
-
 ├── package.json
-
 └── README.md
+```
 
 ## Components
 
