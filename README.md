@@ -117,3 +117,5 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## Acknowledgements
 
 This project was created to gain exposure to React. Special thanks to the various online resources and communities that provided guidance and support, particularly the [React official documentation](https://react.dev/learn) and [W3Shools React](https://www.w3schools.com/react/default.asp).
+
+Last updated 4:17 PM MST 8/2/2024
