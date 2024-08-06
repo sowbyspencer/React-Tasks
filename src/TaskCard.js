@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+/**
+ * The TaskCard function in JavaScript defines a component that displays task
+ * information and allows for editing, completion, and deletion of tasks.
+ * @returns The `TaskCard` component is being returned. The component
+ * conditionally renders different content based on whether `isEditing` state is
+ * true or false. If `isEditing` is true, it displays input fields for editing the
+ * task details, and if false, it displays the task details along with options to
+ * mark the task as completed, delete the task, or edit the task.
+ */
 function TaskCard({ task, updateTask, deleteTask }) {
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState(task.title);
@@ -9,6 +18,16 @@ function TaskCard({ task, updateTask, deleteTask }) {
   const [urgency, setUrgency] = useState(task.urgency);
   const [error, setError] = useState(false);
 
+  /**
+   * The handleSave function checks if the title is empty, sets an error if it is,
+   * removes the error after 1.5 seconds, updates the task with new data, and
+   * exits editing mode.
+   * @returns If the `title` is empty or only contains whitespace characters, an
+   * error is set to true, and then after 1.5 seconds, the error is removed. If
+   * the `title` is not empty, the `updateTask` function is called with the
+   * `task.id` and an object containing `title`, `notes`, `importance`, and
+   * `urgency`. Finally, the `
+   */
   const handleSave = () => {
     if (title.trim() === "") {
       setError(true);
@@ -19,14 +38,26 @@ function TaskCard({ task, updateTask, deleteTask }) {
     setIsEditing(false);
   };
 
+  /**
+   * The `handleComplete` function toggles the completion status of a task.
+   */
   const handleComplete = () => {
     updateTask(task.id, { completed: !task.completed });
   };
 
+  /**
+   * The handleDelete function is used to delete a task by calling the deleteTask
+   * function with the task's id as a parameter.
+   */
   const handleDelete = () => {
     deleteTask(task.id);
   };
 
+  // The `TaskCard` component conditionally renders different content based on
+  // whether `isEditing` state is true or false. If `isEditing` is true, it displays
+  // input fields for editing the task details, and if false, it displays the task
+  // details along with options to mark the task as completed, delete the task, or
+  // edit the task.
   return (
     <div className="task-card" title="TaskCard" id={`taskId${task.id}`}>
       {isEditing ? (

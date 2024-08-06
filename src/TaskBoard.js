@@ -1,6 +1,14 @@
 import React from "react";
 import TaskCard from "./TaskCard";
 
+/**
+ * The TaskBoard function filters and sorts tasks based on importance and urgency
+ * ranges, then renders TaskCard components accordingly in different sections.
+ * @returns The `TaskBoard` component is being returned. It consists of four
+ * sections, each displaying tasks based on their importance and urgency levels.
+ * The tasks are filtered and sorted accordingly before being rendered using the
+ * `TaskCard` component.
+ */
 function TaskBoard({ tasks, updateTask, deleteTask }) {
   const renderTasks = (importanceRange, urgencyRange) => {
     return tasks
@@ -25,6 +33,11 @@ function TaskBoard({ tasks, updateTask, deleteTask }) {
       ));
   };
 
+  // The `TaskBoard` component returns a task board layout with different sections
+  // based on the importance and urgency of tasks. Each section displays tasks
+  // filtered and sorted based on their importance and urgency levels. The tasks are
+  // rendered using the `TaskCard` component with the provided `updateTask` and
+  // `deleteTask` functions for handling task updates and deletions.
   return (
     <div id="board">
       <div>
