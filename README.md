@@ -2,7 +2,7 @@
 
 [Current hosted site](https://react-tasks-fam7.onrender.com/)
 
-This project is a task management application built with React. It allows users to add, edit, and delete tasks, and organize them based on importance and urgency on a virtual board (Tasks are only saved locally). This project was created to gain exposure to React, following the learning resources from [React's official documentation](https://react.dev/learn) and [W3Schools React](https://www.w3schools.com/react/default.asp).
+This project is a task management application built with React. It allows users to add, edit, and delete tasks, and organize them based on importance and urgency on a virtual board (Tasks are only saved locally). This project was created to gain exposure to React and learn it's basic concepts. Microsoft Visual Studio Code was the IDE used. ChatGPT was used in the creation of this program for setting up the environment, creating the project structure, error finding and debugging (Chat is not shareable). GitHub Copilot was in use, especially for comments for clarification. Other learning resources include [React's official documentation](https://react.dev/learn) and [W3Schools React](https://www.w3schools.com/react/default.asp).
 
 ## Features
 
@@ -32,11 +32,10 @@ task-management-app/
 ├── public/
 │ └── index.html
 ├── src/
-│ ├── components/
-│ │ ├── AddTask.js
-│ │ ├── TaskBoard.js
-│ │ ├── TaskCard.js
-│ ├── App.js
+│ ├── AddTask.jsx
+│ ├── TaskBoard.jsx
+│ ├── TaskCard.jsx
+│ ├── App.jsx
 │ ├── index.js
 │ └── styles.css
 ├── .gitignore
@@ -118,4 +117,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 This project was created to gain exposure to React. Special thanks to the various online resources and communities that provided guidance and support, particularly the [React official documentation](https://react.dev/learn) and [W3Shools React](https://www.w3schools.com/react/default.asp).
 
-Last updated 4:17 PM MST 8/2/2024
+Last updated 6:21 PM MST 8/6/2024
